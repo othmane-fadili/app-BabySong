@@ -2,9 +2,22 @@ package com.othmane.babysong;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class SongActivity extends AppCompatActivity {
+    TextView title,description;
+    ImageView imageSong;
+    Button btnStart,btnStop;
+    MediaPlayer mp;
+
 
 
     int[] imgs= new int[]{
@@ -134,5 +147,40 @@ public class SongActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_song);
+
+        Intent mIntent = getIntent();
+        int songsRes = mIntent.getIntExtra("songs",0);
+        int imgsrRes = mIntent.getIntExtra("imgs",0);
+        String lyricsRes = mIntent.getStringExtra("lyrics");
+        String titleRes = mIntent.getStringExtra("title");
+
+        title = findViewById(R.id.title);
+        description = findViewById(R.id.description);
+        imageSong = findViewById(R.id.imageSong);
+        btnStart = findViewById(R.id.btnStart);
+        btnStop = findViewById(R.id.btnStop);
+
+        title.setText(titleRes);
+        description.setText(lyricsRes);
+        imageSong.setImageResource(imgsrRes);
+        mp = MediaPlayer.create(getApplicationContext(),songsRes);
+        btnStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                mp.start();
+                Toast.makeText(getApplicationContext(),"lire " ,Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        btnStop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(mp.isPlaying()){
+                    mp.stop();
+                    Toast.makeText(getApplicationContext(),"stop " ,Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 }

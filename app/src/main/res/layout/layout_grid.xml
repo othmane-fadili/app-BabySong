@@ -15,11 +15,12 @@
         android:paddingBottom="10dp" />
 
     <TextView
-        android:id="@+id/titleSong"
+        android:id="@+id/titleofMusic"
         android:layout_width="219dp"
         android:layout_height="33dp"
         android:text="title of Music"
         android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold" />
 
