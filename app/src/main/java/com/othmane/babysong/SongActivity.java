@@ -183,4 +183,11 @@ public class SongActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    protected void onStop(){
+        super.onStop();
+        mp.pause();
+    }
 }
+

@@ -3,6 +3,7 @@ package com.othmane.babysong;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -149,7 +150,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         // Each row in the list stores country name, currency and flag
         List<HashMap<String,String>> aList = new ArrayList<HashMap<String,String>>();
