@@ -163,7 +163,7 @@ public class SongActivity extends AppCompatActivity {
         title.setText(titleRes);
         description.setText(lyricsRes);
         imageSong.setImageResource(imgsrRes);
-        mp = MediaPlayer.create(getApplicationContext(),songsRes);
+        MediaPlayer mp = MediaPlayer.create(getApplicationContext(),songsRes);
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
