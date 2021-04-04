@@ -20,56 +20,43 @@
             android:orientation="vertical"
             android:gravity="center">
 
-            <TextView
-                android:id="@+id/title"
-                android:layout_width="359dp"
-                android:layout_height="52dp"
-                android:layout_gravity="center"
-                android:background="#E6E2E6"
-                android:text="@string/baby_song"
-                android:textAlignment="center"
-                android:textSize="36sp"
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"/>
 
             <ImageView
                 android:id="@+id/imageSong"
-                android:layout_width="350dp"
-                android:layout_height="180dp"
-                android:layout_marginTop="10dp"
+                android:layout_width="380dp"
+                android:layout_height="210dp"
+                android:layout_marginTop="15dp"
                 android:scaleType="fitXY" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
                 android:gravity="center"
                 >
 
-                <Button
-                    android:id="@+id/btnStart"
-                    android:layout_width="100dp"
-                    android:layout_height="63dp"
-                    android:text="Lire"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="25dp" />
 
-                <Button
+                <ImageButton
+                    android:id="@+id/btnStart"
+                    android:layout_width="10dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#C533A5"
+                    app:srcCompat="@android:drawable/ic_media_play" />
+
+
+                <ImageButton
                     android:id="@+id/btnStop"
-                    android:layout_width="107dp"
-                    android:layout_height="62dp"
-                    android:text="Stop"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.77"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.464" />
+                    android:layout_width="10dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="90dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#C533A5"
+                    app:srcCompat="@android:drawable/ic_media_pause" />
             </LinearLayout>
 
             <TextView
@@ -85,7 +72,7 @@
 
             <TextView
                 android:id="@+id/description"
-                android:layout_width="400dp"
+                android:layout_width="380dp"
                 android:layout_height="wrap_content"
                 android:background="#F4F0F4"
                 android:textColor="#050505"

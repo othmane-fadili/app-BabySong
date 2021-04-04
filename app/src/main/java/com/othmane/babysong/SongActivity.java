@@ -8,14 +8,15 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class SongActivity extends AppCompatActivity {
-    TextView title,description;
+    TextView description;
     ImageView imageSong;
-    Button btnStart,btnStop;
+    ImageButton btnStart,btnStop;
     MediaPlayer mp;
 
 
@@ -155,13 +156,11 @@ public class SongActivity extends AppCompatActivity {
         String lyricsRes = mIntent.getStringExtra("lyrics");
         String titleRes = mIntent.getStringExtra("title");
 
-        title = findViewById(R.id.title);
         description = findViewById(R.id.description);
         imageSong = findViewById(R.id.imageSong);
         btnStart = findViewById(R.id.btnStart);
         btnStop = findViewById(R.id.btnStop);
 
-        title.setText(titleRes);
         description.setText(lyricsRes);
         imageSong.setImageResource(imgsrRes);
         mp = MediaPlayer.create(getApplicationContext(),songsRes);
@@ -178,7 +177,7 @@ public class SongActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(mp.isPlaying()){
                     mp.pause();
-//                    Toast.makeText(getApplicationContext(),"stop " ,Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(getApplicationContext(),"pause" ,Toast.LENGTH_SHORT).show();
                 }
             }
         });
