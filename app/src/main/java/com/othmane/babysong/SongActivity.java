@@ -169,7 +169,7 @@ public class SongActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 mp.start();
-                Toast.makeText(getApplicationContext(),"lire " ,Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(),"lire " ,Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -177,8 +177,8 @@ public class SongActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(mp.isPlaying()){
-                    mp.stop();
-                    Toast.makeText(getApplicationContext(),"stop " ,Toast.LENGTH_SHORT).show();
+                    mp.pause();
+//                    Toast.makeText(getApplicationContext(),"stop " ,Toast.LENGTH_SHORT).show();
                 }
             }
         });
