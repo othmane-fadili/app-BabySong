@@ -164,11 +164,10 @@ public class SongActivity extends AppCompatActivity {
         title.setText(titleRes);
         description.setText(lyricsRes);
         imageSong.setImageResource(imgsrRes);
-        MediaPlayer mp = MediaPlayer.create(getApplicationContext(),songsRes);
+        mp = MediaPlayer.create(getApplicationContext(),songsRes);
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 mp.start();
 //                Toast.makeText(getApplicationContext(),"lire " ,Toast.LENGTH_SHORT).show();
             }
@@ -188,7 +187,9 @@ public class SongActivity extends AppCompatActivity {
     @Override
     protected void onStop(){
         super.onStop();
-        mp.pause();
+        if(mp!=null) {
+            mp.stop();
+        }
     }
 }
 
