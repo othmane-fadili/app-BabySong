@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     int[] imgs= new int[]{
-            R.drawable.alphabet_song,
             R.drawable.are_you_sleeping_brother_john,
             R.drawable.baa_baa_black_sheep,
             R.drawable.bingo_s,
@@ -50,11 +49,11 @@ public class MainActivity extends AppCompatActivity {
             R.drawable.ten_in_the_bed,
             R.drawable.twinkle,
             R.drawable.wheels_on_the_bus,
-            R.drawable.yankee_doodle
+            R.drawable.yankee_doodle,
+            R.drawable.alphabet_song
     };
 
     int[] songs= new int[]{
-            R.raw.alphabet_song,
             R.raw.are_you_sleeping_brother_john,
             R.raw.baa_baa_black_sheep,
             R.raw.bingo_s,
@@ -81,10 +80,10 @@ public class MainActivity extends AppCompatActivity {
             R.raw.ten_in_the_bed,
             R.raw.twinkle,
             R.raw.wheels_on_the_bus,
-            R.raw.yankee_doodle
+            R.raw.yankee_doodle,
+            R.raw.alphabet_song
     };
     String[] titles= new String[]{
-            "ABC (Alphabet Song)",
             "Are You Sleeping?",
             "Baa Baa Black Sheep",
             "Bingo - B.I.N.G.O is its name-o",
@@ -111,11 +110,11 @@ public class MainActivity extends AppCompatActivity {
             "Ten in the Bed",
             "Twinkle Twinkle Little Star",
             "Wheels on the Bus",
-            "Yankee Doodle"
+            "Yankee Doodle",
+            "ABC (Alphabet Song)"
     };
 
     String[] lyrics= new String[]{
-            "A – B – C – D – E – F – G\n H – I – J – K – L – M – N – O – P\n Q – R – S – T – U- V\n W – X – Y and Z\n Now I know my ABC’s\n Next time won’t you sing with me.",
             "Are you sleeping, are you sleeping?\n Brother John, Brother John?\n Morning bells are ringing, morning bells are ringing\n Ding ding dong, ding ding dong.\n *Repeat Twice",
             "Baa, baa, black sheep, have you any wool?\n Yes sir, yes sir, three bags full!\n One for the master\n One for the dame\n And one for the little boy Who lives down the lane\n *Repeat 3 times",
             "There was a farmer who had a dog\n And Bingo was his name-o.\n B-I-N-G-O\n B-I-N-G-O\n B-I-N-G-O\n And Bingo was his name-o.\n There was a farmer who had a dog\n And Bingo was his name-o.\n (clap)-I-N-G-O\n (clap)-I-N-G-O\n (clap)-I-N-G-O\n And Bingo was his name-o.\n There was a farmer who had a dog\n And Bingo was his name-o.\n (clap)-(clap)-N-G-O\n (clap)-(clap)-N-G-O\n (clap)-(clap)-N-G-O\n And Bingo was his name-o.\n There was a farmer who had a dog\n And Bingo was his name-o.\n (clap)-(clap)-(clap)-G-O\n (clap)-(clap)-(clap)-G-O\n (clap)-(clap)-(clap)-G-O\n And Bingo was his name-o.\n There was a farmer who had a dog\n And Bingo was his name-o.\n (clap)-(clap)-(clap)-(clap)-O\n (clap)-(clap)-(clap)-(clap)-O\n (clap)-(clap)-(clap)-(clap)-O\n And Bingo was his name-o.\n There was a farmer who had a dog\n And Bingo was his name-o.\n (clap)-(clap)-(clap)-(clap)-(clap)\n (clap)-(clap)-(clap)-(clap)-(clap)\n (clap)-(clap)-(clap)-(clap)-(clap)\n And Bingo was his name-o.\n",
@@ -142,7 +141,8 @@ public class MainActivity extends AppCompatActivity {
             " There were ten in the bed\n And the little one said,\n“Roll over! Roll over!”\n So they all rolled over and\n one fell out\n There were nine in the bed\nAnd the little one said,\n“Roll over! Roll over!”\n So they all rolled over\n And one fell out\n There were eight in the bed\n And the little one said\n“Roll over! Roll over!”\n So they all rolled over and one fell out\n There were seven in the bed\n And the little one said\n“Roll over! Roll over!”\n So they all rolled over and one fell out\n There were six in the bed\n And the little one said\n“Roll over! Roll over!”\n So they all rolled over and one fell out\n There were five in the bed\n And the little one said\n“Roll over! Roll over!”\n So they all rolled over and one fell out\n There were four in the bed\n And the little one said\n“Roll over! Roll over!”\n So they all rolled over and one fell out\n There were three in the bed\n And the little one said,\n“Roll over! Roll over!”\n So they all rolled over and one fell out\n There were two in the bed\n And the little one said\n“Roll over! Roll over!”\n So they all rolled over and one fell out\n There was one in the bed\nAnd the little one said\n“Good night”",
             " Twinkle, twinkle, little star\n How I wonder what you are.\n Up above the world so high\n Like a diamond in the sky.\n Twinkle, twinkle, little star\n How I wonder what you are.\n When the blazing sun is gone\n When he nothing shines upon\n Then you show your little light\n Twinkle, twinkle, all the night.\n Then the traveler in the dark\n Thanks you for your tiny spark\n He could not see which way to go\n If you did not twinkle so.\n In the dark blue sky you keep\n And often through my curtains peep\n For you never shut your eye\n Till the sun is in the sky.\n As your bright and tiny spark\n Lights the traveler in the dark.\n Though I know not what you are\n Twinkle, twinkle, little star.",
             " The wheels on the bus go round and round\n Round and round, round and round\n The wheels on the bus go round and round\n All through the town\n The doors on the bus go open and shut\n Open and shut, open and shut\n The doors on the bus go open and shut\n All through the town\n The wipers on the bus go swish swish swish\n Swish swish swish, swish swish swish\n The wipers on the bus go swish swish swish\n All through the town\n The baby on the bus goes waa waa waa\n Waa waa waa, waa waa waa\n The baby on the bus goes waa waa waa\n All through the town\n The mommy on the bus goes shhh, shhh, shhh\n Shh shh shh, shh shh shh\n The mommy on the bus goes shhh, shhh, shhh\n All through the town\n The daddy on the bus goes read read read\n Read read read, read read read\n The daddy on the bus goes read read read\n All through the town\n The mommy and the daddy say “I love you\n I love you, I love you”\n The mommy and the daddy say “I love you\n All through the town",
-            " Yankee Doodle went to town, a riding on a pony\n Stuck a feather in his cap and called it macaroni\n Yankee Doodle, keep it up, Yankee Doodle dandy\n Mind the music and the step and with the girls be handy\n Father and I went down to camp along with Captain Goodin\nThere we saw the men and boys as thick as hasty puddin’\nYankee Doodle keep it up, Yankee Doodle dandy\nMind the music and the step and with the girls be handy\nThere was Captain Washington upon a slapping stallion\n And all the men and boys around, I guess there was a million\n Yankee Doodle keep it up, Yankee Doodle dandy\n Mind the music and the step and with the girls be handy"
+            " Yankee Doodle went to town, a riding on a pony\n Stuck a feather in his cap and called it macaroni\n Yankee Doodle, keep it up, Yankee Doodle dandy\n Mind the music and the step and with the girls be handy\n Father and I went down to camp along with Captain Goodin\nThere we saw the men and boys as thick as hasty puddin’\nYankee Doodle keep it up, Yankee Doodle dandy\nMind the music and the step and with the girls be handy\nThere was Captain Washington upon a slapping stallion\n And all the men and boys around, I guess there was a million\n Yankee Doodle keep it up, Yankee Doodle dandy\n Mind the music and the step and with the girls be handy",
+            "A – B – C – D – E – F – G\n H – I – J – K – L – M – N – O – P\n Q – R – S – T – U- V\n W – X – Y and Z\n Now I know my ABC’s\n Next time won’t you sing with me."
     };
 
 

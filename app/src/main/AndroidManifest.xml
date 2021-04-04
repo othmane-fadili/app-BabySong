@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BabySong">
         <activity android:name=".SongActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
